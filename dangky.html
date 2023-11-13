@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB ONLINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="header">
+        <div class="item">
+          <img src="img/logo.png" alt="" width="170px" height="55px">
+        </div>
+        <div class="item">
+          <img src="img/icon1.png" width="25px" height="25px" alt="">
+          <p class="hotline">Hotline mua hàng<br> Gọi ngay: 0896475590</p>
+        </div>
+        <div class="item">
+          <img src="img/icon2.png" width="25px" height="25px" alt="">
+          <p class="hotline">Giao hàng tận nơi<br>Miễn phí từ 5 sản phẩm</p>
+        </div>
+        <div class="item">
+          <img src="img/icon3.png" width="25px" height="25px"  alt="">
+          <p class="hotline">1 Đổi 1 nếu lỗi hàng<br>Trong vòng 7 ngày</p>
+        </div>
+        <div class="item">
+            <img src="img/icon4.jpg" width="25px" height="25px"  alt="">
+            <a href="#">ĐĂNG KÍ</a>
+        </div>
+        <div class="item">
+          <img src="img/bag.png" alt="" width="40px" height="35px">
+          <a class="hotline" href="#">Giỏ hàng</a>
+        </div>
+    </div>
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">HOME</a></li>
+            <li><a href="#" class="nav-link">SHOP</a></li>
+            <li><a href="#" class="nav-link">DOUBLE TEE</a></li>
+            <li><a href="#" class="nav-link">SIGNATURE</a></li>
+            <li><a href="#" class="nav-link">NEWS</a></li>
+            <li><a href="#" class="nav-link">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Tìm kiếm sản phẩm" required name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Đăng nhập</span>
+                            <span onclick="register()">Đăng ký</span>
+                            <hr id="Indicator">
+                        </div>
+    
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Ten dang nhap">
+                            <input type="password" placeholder="Mat khau">
+                            <button type="submit" class="btnxem">Đăng nhập</button>
+                            <a href="">Quên mật khẩu</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Ten dang nhap">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Mat khau">
+                            <button type="submit" class="btnxem">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải xuống ứng dụng của chúng tôi</h3>
+                    <p>Tải App cho điện thoại Android và Ios</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div> 
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>Cảm ơn quý khách đã tin tưởng và ủng hộ </p>
+                </div> 
+                <div class="footer-col-3">
+                    <h3>Liên kết hữu ích</h3>
+                    <ul>
+                        <li>Phiếu giảm giá</li>
+                        <li>Bài đăng trên Blog</li>
+                        <li>Chính sách hoàn trả</li>
+                        <li>Chi nhánh khác</li>
+                    </ul>
+                </div> 
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)"
+        LoginForm.style.transform = "translateX(0px)"
+        Indicator.style.transform = "translateX(130px)"
+
+    }
+    function login(){
+        
+        RegForm.style.transform = "translateX(300px)"
+        LoginForm.style.transform = "translateX(300px)"
+        Indicator.style.transform = "translateX(0px)"
+
+    }
+</script>

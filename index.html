@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB ONLINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="header padding-80">
+        <div class="item">
+          <img src="img/logo.png" alt="" width="170px" height="55px">
+        </div>
+        <div class="item">
+          <img src="img/icon1.png" width="25px" height="25px" alt="">
+          <p class="hotline">Hotline mua hàng<br> Gọi ngay: 0896475590</p>
+        </div>
+        <div class="item">
+          <img src="img/icon2.png" width="25px" height="25px" alt="">
+          <p class="hotline">Giao hàng tận nơi<br>Miễn phí từ 5 sản phẩm</p>
+        </div>
+        <div class="item">
+          <img src="img/icon3.png" width="25px" height="25px"  alt="">
+          <p class="hotline">1 Đổi 1 nếu lỗi hàng<br>Trong vòng 7 ngày</p>
+        </div>
+        <div class="item">
+            <img src="img/icon4.jpg" width="25px" height="25px"  alt="">
+            <a href="#">ĐĂNG KÍ</a>
+        </div>
+        <div class="item">
+          <img src="img/bag.png" alt="" width="40px" height="35px">
+          <a class="hotline" href="#">Giỏ hàng</a>
+        </div>
+    </div>
+    <div class="navbar padding-80">
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">HOME</a></li>
+            <li><a href="#" class="nav-link">SHOP</a></li>
+            <li><a href="#" class="nav-link">DOUBLE TEE</a></li>
+            <li><a href="#" class="nav-link">SIGNATURE</a></li>
+            <li><a href="#" class="nav-link">NEWS</a></li>
+            <li><a href="#" class="nav-link">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Tìm kiếm sản phẩm" required name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="slide">
+          <div class="w3-content w3-section" style="max-width:100%">
+            <img class="mySlides w3-animate-left" src="img/slide4.png" style="width:100%">
+            <img class="mySlides w3-animate-right" src="img/slide3.png" style="width:100%">
+            <img class="mySlides w3-animate-top" src="img/slide2.png" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="img/slide1.png" style="width:100%">
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000);    
+          }
+          </script>
+    </div>
+    <div class="sanpham padding-80">
+        <div class="title">SẢN PHẨM</div>
+    <div class="row">
+        <div class="boxsp">
+            <img src="img/sp1.jpg" alt=""width="230px" h="230px" srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp2.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp3.jpg" alt=""width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp4.jpg" alt="" width="230px" h="230px" srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp5.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="boxsp">
+            <img src="img/sp6.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp7.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp8.jpg" alt=""width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp9.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+        <div class="boxsp">
+            <img src="img/sp10.jpg" alt="" width="230px" h="230px"  srcset="">
+            <h8>Fearow Cutie Bear / Black</h8>
+            <p class="price">129,000₫</p>
+        </div>
+    </div>
+    <div class="btnxem"><p>XEM THÊM</p></div>
+    </div>
+    <div class="banner">
+        <img src="img/banner.png" width="100%" alt="">
+    </div>
+    <div class="ins padding-80">
+        <div class="title mt">INSTAGRAM: FEAROW</div>
+    <div class="row">
+        <div class="boxins">
+            <img src="img/ins1.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+        <div class="boxins">
+            <img src="img/ins2.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+        <div class="boxins">
+            <img src="img/ins3.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+        </div>
+        <div class="row">
+        <div class="boxins">
+            <img src="img/ins4.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+        <div class="boxins">
+            <img src="img/ins5.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+        <div class="boxins">
+            <img src="img/ins6.png" alt=""width="440px" h="450px" srcset="">
+        </div>
+    </div>
+    </div>
+    <div class="footer padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải xuống ứng dụng của chúng tôi</h3>
+                    <p>Tải App cho điện thoại Android và Ios</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div> 
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>Cảm ơn quý khách đã tin tưởng và ủng hộ </p>
+                </div> 
+                <div class="footer-col-3">
+                    <h3>Liên kết hữu ích</h3>
+                    <ul>
+                        <li>Phiếu giảm giá</li>
+                        <li>Bài đăng trên Blog</li>
+                        <li>Chính sách hoàn trả</li>
+                        <li>Chi nhánh khác</li>
+                    </ul>
+                </div> 
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
