@@ -36,6 +36,13 @@ if(isset($_GET['act'])){
     
             include "danhmuc/update.php";
             break; 
+        case 'sua':
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+            $dm=loadone_danhmuc($_GET['id']);     
+            }
+    
+            include "danhmuc/update.php";
+            break; 
         case 'updatedm':
             if(isset($_POST['capnhat'])&&($_POST['capnhat'])){
                 $id=$_POST['id'];
